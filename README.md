@@ -42,8 +42,28 @@ print(hello.a)
 print(hello.get_b())
 
 ```
+### Abstraction
+In OOP, abstraction is used to simplify features without the complex details or explanations. It aids in modeling classes appropirate to the problem. The high-level mechanism of objects are exposed, but this mechanism should hide implemented details.
 
+The following is an illustration of abstraction:
+```
+from abc import ABC, abstractmethod
 
+class Shape(ABC):
+    @abstractmethod
+    def area(self): pass
+
+class Square(Shape):
+    def __init__(self, side):
+        self.__side = side
+
+    def area(self):
+        return self.__side * self.__side
+
+square = Square(2)
+print(square.area())
+```
+In the above illustrated code, there are several points to be made. The code uses abstract classes and abstract methods. Abstract classes contain one or more abstract method. Abstract methods are declared, but they contain no implementation. Abstract classes may not have an instance and therefore require subclasses. The subclasses provide implementations for the abstract method. 
 
 
 
