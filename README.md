@@ -21,7 +21,8 @@ hello = Hello('name')
 print(hello.a)
 print(hello.b)
 ```
-
+Notice the underscore in second variable. This underscore indicates that the variable is encapsulated, hence cannot be called. If this is printed, we would get an error:
+``` AttributeError: 'Hello' object has no attribute 'b' ```
 
 
 
