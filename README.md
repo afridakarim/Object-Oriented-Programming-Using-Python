@@ -11,7 +11,7 @@ These principles are: encapsulation, abstraction, inheritance, and polymorphism.
 Encapsualtion can be understood enclosing something in a capsule. In the case of OOP, this would mean to restrict the state of an object only to one class. This state cannot be accessed by other classes unless allowed through the method function. Encapsulation helps in  preventing accidental data changes in code.
 
 The following is an illustration of encapsulation:
-`code`
+`
 class Hello:
     def __init__(self, greetings):
         self.a = 'ahoy!'
@@ -20,7 +20,8 @@ class Hello:
 hello = Hello('name')
 print(hello.a)
 print(hello.b)
-`code`
+`
+
 
 
 
