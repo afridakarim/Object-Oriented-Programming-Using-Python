@@ -66,4 +66,34 @@ print(square.area())
 In the above illustrated code, there are several points to be made. The code uses abstract classes and abstract methods. Abstract classes contain one or more abstract method. Abstract methods are declared, but they contain no implementation. Abstract classes may not have an instance and therefore require subclasses. The subclasses provide implementations for the abstract method. 
 
 
+### Inheritance
+Inheritance is used to form new classes from already defined classes. The base classes (where all methods and properties are derived from) are called parent classes. Where as, the derived classes (newly formed classes) are called child classes. By using inheritance, one does not need to keep rewriting similar class strucutures and it reduces the complexity of a program. 
+
+The following is an illustration of inheritance:
+
+```
+class Person( object ):               
+        def __init__(self, name, idnumber):    
+                self.name = name 
+                self.idnumber = idnumber 
+        def display(self): 
+                print(self.name) 
+                print(self.idnumber) 
+  
+ 
+class Employee( Person ):            
+        def __init__(self, name, idnumber, salary, post): 
+                self.salary = salary 
+                self.post = post 
+   
+                Person.__init__(self, name, idnumber)  
+  
+                  
+a = Person('Bob', 239619)      
+a.display()  
+```
+In the code above the ```class Person``` is the parent class, where as the ```class Employee``` is the child class. By using the ```Person.__init__(self, name, idnumber)``` the child class calls the parent class.
+
+
+
 
