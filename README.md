@@ -7,7 +7,7 @@ These principles are: encapsulation, abstraction, inheritance, and polymorphism.
 
 
 
-### **Encapsulation:**
+### Encapsulation
 Encapsualtion can be understood enclosing something in a capsule. In the case of OOP, this would mean to restrict the state of an object only to one class. This state cannot be accessed by other classes unless allowed through the method function. Encapsulation helps in  preventing accidental data changes in code.
 
 The following is an illustration of encapsulation:
