@@ -1,4 +1,3 @@
-from abc import ABC, abstractmethod
 #Encapsulation
 class Hello:
     def __init__(self, greetings):
@@ -17,7 +16,7 @@ print(hello.a)
 print(hello.get_b())
 
 #Abstraction
-
+from abc import ABC, abstractmethod
 
 class Shape(ABC):
     @abstractmethod
