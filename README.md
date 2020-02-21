@@ -94,6 +94,12 @@ a.display()
 ```
 In the code above the ```class Person``` is the parent class, where as the ```class Employee``` is the child class. By using the ```Person.__init__(self, name, idnumber)``` the child class calls the parent class.
 
+### Polymorphism
+In inheritane we have the ability to derive methods from the parent class into the child class. But the issue comes when you want to derive multiple methods but wish to change up some things in the new class. This is where polymorphism comes to play. Coming from the greek words 'Poly' (many) and 'morphism' (forms), it helps to use the same function name with different signatures for different types of child classes. In all, polymorphism allows us to define a child class with the same name as defined in the parent class.  
+
+The following is an illustration of polymorphism:
+```
+
 
 
 
