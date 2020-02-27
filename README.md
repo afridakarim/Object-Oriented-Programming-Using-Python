@@ -24,30 +24,43 @@ In OOP, abstraction is used to simplify features without the complex details or 
 The following is an illustration of abstraction:
 https://github.com/afridakarim/individual_project_1/blob/master/Calculator/Calculator.py
 
-In the above illustrated code, there are several points to be made. 
+In the code below:
 ```def Difference(self, a, b):
         self.Result = Subtraction.difference(a, b)
         return self.Result
 ```
-Here the ```Difference``` function calls the ```difference``` 
+Here all the ```Difference``` function needs to call is  the ```difference``` function from ```MathOperations```
+
 ### Inheritance
 Inheritance is used to form new classes from already defined classes. The base classes (where all methods and properties are derived from) are called parent classes. Where as, the derived classes (newly formed classes) are called child classes. By using inheritance, one does not need to keep rewriting similar class strucutures and it reduces the complexity of a program. 
 
 The following is an illustration of inheritance:
 
-https://github.com/afridakarim/individual_project_1/blob/master/Calculator/Calculator.py
+https://github.com/afridakarim/individual_project_1/blob/master/Tests/test_MathOperations.py
 
-In the code above the ```class Person``` is the parent class, where as the ```class Employee``` is the child class. By using the ```Person.__init__(self, name, idnumber)``` the child class calls the parent class.
+In the code below:
+```
+ def test_MathOperations_subtraction(self):
+        self.assertEqual(-1, Subtraction.difference(1, 2))
+```
+```def test_MathOperations_subtraction(self)``` is a new function, but it inherits the parent ```Subtraction.difference``` functions and makes a new execution
+
+
 
 ### Polymorphism
 In inheritane we have the ability to derive methods from the parent class into the child class. But the issue comes when you want to derive multiple methods but wish to change up some things in the new class. This is where polymorphism comes to play. Coming from the greek words 'Poly' (many) and 'morphism' (forms), it helps to use the same function name with different signatures for different types of child classes. In all, polymorphism allows us to define a child class with the same name as defined in the parent class.  
 
 The following is an illustration of polymorphism:
 
-https://github.com/afridakarim/individual_project_1/blob/master/Tests/test_MathOperations.py
 https://github.com/afridakarim/individual_project_1/blob/master/Tests/test_Calculator.py
 
-The above code contains polymorphism with inheritance. As you can see that multiple child classes have used the parent class to create new objects. 
+```def test_multiple_calculators(self):
+        calculator1 = Calculator()
+        calculator2 = Calculator()
+        self.calculator.Sum(calculator1.Sum(1, 2), calculator2.Difference(3, 4))
+        self.assertEqual(2, self.calculator.Result)
+```
+In the above code, the ```Calculator()``` is called twice, but used in different context
 
 ---------
 
