@@ -43,6 +43,7 @@ In inheritane we have the ability to derive methods from the parent class into t
 The following is an illustration of polymorphism:
 
 https://github.com/afridakarim/individual_project_1/blob/master/Tests/test_MathOperations.py
+https://github.com/afridakarim/individual_project_1/blob/master/Tests/test_Calculator.py
 
 The above code contains polymorphism with inheritance. As you can see that multiple child classes have used the parent class to create new objects. 
 
