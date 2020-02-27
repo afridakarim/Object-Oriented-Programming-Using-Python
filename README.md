@@ -12,6 +12,9 @@ Encapsualtion can be understood enclosing something in a capsule. In the case of
 The following is an illustration of encapsulation:
 https://github.com/afridakarim/individual_project_1/blob/master/MathOperations/subtraction.py
 
+Here the ```def difference(minuend, subtrahend)``` the  ```minuend/subtrahend```  is encapsulated within the ```difference``` function
+As stated above, this cannot be accessed by other classes unless allowed.
+
 
 
 
@@ -21,9 +24,12 @@ In OOP, abstraction is used to simplify features without the complex details or 
 The following is an illustration of abstraction:
 https://github.com/afridakarim/individual_project_1/blob/master/Calculator/Calculator.py
 
-In the above illustrated code, there are several points to be made. The code uses abstract classes and abstract methods. Abstract classes contain one or more abstract method. Abstract methods are declared, but they contain no implementation. Abstract classes may not have an instance and therefore require subclasses. The subclasses provide implementations for the abstract method. 
-
-
+In the above illustrated code, there are several points to be made. 
+```def Difference(self, a, b):
+        self.Result = Subtraction.difference(a, b)
+        return self.Result
+```
+Here the ```Difference``` function calls the ```difference``` 
 ### Inheritance
 Inheritance is used to form new classes from already defined classes. The base classes (where all methods and properties are derived from) are called parent classes. Where as, the derived classes (newly formed classes) are called child classes. By using inheritance, one does not need to keep rewriting similar class strucutures and it reduces the complexity of a program. 
 
