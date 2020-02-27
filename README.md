@@ -1,3 +1,4 @@
+https://travis-ci.org/afridakarim/Object-Oriented-Programming-Using-Python.svg?branch=master
 
 # Object-Oriented-Programming-Using-Python
 
@@ -6,17 +7,13 @@ Object Oriented Programming (OOP) is using objects and their interactions to cre
 In this tutorial, I will be explaining and demonstrating four principles in object oriented programming. 
 These principles are: encapsulation, abstraction, inheritance, and polymorphism. 
 
-https://github.com/afridakarim/individual_project_1
-
 ### Encapsulation
 Encapsualtion can be understood enclosing something in a capsule. In the case of OOP, this would mean to restrict the state of an object only to one class. This state cannot be accessed by other classes unless allowed through the method function. Encapsulation helps in  preventing accidental data changes in code.
 
 The following is an illustration of encapsulation:
 https://github.com/afridakarim/individual_project_1/blob/master/MathOperations/subtraction.py
 
-Notice the underscore in second variable. This underscore indicates that the variable is encapsulated, hence cannot be called. If this is printed, we would get an error:
 
-To call the encapsulated method, we would use a setter and getter function. This will help us manually call the method:
 
 
 ### Abstraction
