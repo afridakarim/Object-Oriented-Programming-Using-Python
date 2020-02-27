@@ -6,7 +6,7 @@ Object Oriented Programming (OOP) is using objects and their interactions to cre
 In this tutorial, I will be explaining and demonstrating four principles in object oriented programming. 
 These principles are: encapsulation, abstraction, inheritance, and polymorphism. 
 
-
+https://github.com/afridakarim/individual_project_1
 
 ### Encapsulation
 Encapsualtion can be understood enclosing something in a capsule. In the case of OOP, this would mean to restrict the state of an object only to one class. This state cannot be accessed by other classes unless allowed through the method function. Encapsulation helps in  preventing accidental data changes in code.
